@@ -1,6 +1,6 @@
 package bsu.comp152;
 
-
+/*
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -8,7 +8,7 @@ import javafx.fxml.Initializable;
 
 import javax.swing.text.html.ListView;
 
-public class Controller implements Initializable {
+public class JokesController implements Initializable {
     @FXML
     private ListView<DataHandler.JokeDataType>ListControl;
     private DataHandler Model;
@@ -28,3 +28,4 @@ public class Controller implements Initializable {
     }
 
 }
+*/

@@ -39,13 +39,15 @@ public class DataHandler {
     }
     class responseDataType{
         String title;
+        String type;
         ArrayList<JokeDataType>results;
     }
     class JokeDataType{
         String title;
+        String type;
         @Override
         public String toString(){
-            return "Jokes Title: "+ title;
+            return "Jokes: "+ title;
         }
     }
 }
