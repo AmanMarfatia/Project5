@@ -1,11 +1,14 @@
 package bsu.comp152;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -28,6 +31,8 @@ public class Main extends Application {
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
 
+        VBox box = new VBox();
+
         var text = new Label("Which option would like to chose, ");
         var color = Paint.valueOf("Red");
         text.setTextFill(color);
@@ -41,8 +46,15 @@ public class Main extends Application {
         Button C = new Button("Currency");
         Button D = new Button("Weather");
 
+        EventHandler<ActionEvent> handler = new EventHandler<ActionEvent>(){
+            @Override
+            public void handle (ActionEvent event){
 
-        var firstScene = new Scene(root, 400,400);
+            }
+        };
+        var firstScene = new Scene(box, 700,700) ;
+        A.setOnAction(handler);
+        A.setFont(font);
         primaryStage.setScene(firstScene);
         primaryStage.show();
 
