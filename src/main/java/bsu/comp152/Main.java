@@ -23,6 +23,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
+        VBox box = new VBox();
+
         Parent root = null;
         var loc = getClass().getResource("Main.fxml");
         try {
@@ -31,11 +34,12 @@ public class Main extends Application {
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
 
-        var text = new Label("Which option would like to chose, ");
+        var text = new Label("Which option would like to chose: ");
         var color = Paint.valueOf("Red");
         text.setTextFill(color);
         var font = Font.font(20);
         text.setFont(font);
+        box.getChildren().add(text);
 
 
         /*
@@ -52,9 +56,10 @@ public class Main extends Application {
 
             }
         };
-        var firstScene = new Scene(root, 700,700) ;
+        var firstScene = new Scene(root, 600,400) ;
         //A.setOnAction(handler);
         //A.setFont(font);
+        primaryStage.setTitle("Project 5");
         primaryStage.setScene(firstScene);
         primaryStage.show();
 
