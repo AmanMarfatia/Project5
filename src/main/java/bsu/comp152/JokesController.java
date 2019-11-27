@@ -25,7 +25,7 @@ public class JokesController implements Initializable {
         Model = new DataHandler(query);
         var jokeList = Model.getData();
         ObservableList<DataHandler.JokeDataType> dataToShow = FXCollections.observableArrayList(jokeList);
-        //ListControl.setItems(dataToShow);
+        ListControl.setItems(dataToShow);
     }
 
     public String getQueryParameters() {
@@ -38,6 +38,8 @@ public class JokesController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        loadData();
+        ListControl.getSelectionModel().selectedItemProperty
 
     }
 }

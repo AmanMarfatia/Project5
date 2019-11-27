@@ -31,7 +31,7 @@ public class Main extends Application {
         try {
             root = FXMLLoader.load(loc);
         }catch (IOException e){
-            System.out.println("Couldn't Find FXML file!!!!!!");
+            System.out.println("Couldn't Find FXML file!");
         }
 
         var text = new Label("Which option would like to chose: ");
