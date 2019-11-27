@@ -31,20 +31,20 @@ public class Main extends Application {
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
 
-        VBox box = new VBox();
-
         var text = new Label("Which option would like to chose, ");
         var color = Paint.valueOf("Red");
         text.setTextFill(color);
         var font = Font.font(20);
         text.setFont(font);
-       // root.getChildren().add(text);
-       // root.setSpacing(20);
-        //var loc
+
+
+        /*
         Button A = new Button("Jokes");  //Aman
         Button B = new Button("Star War");  // Richard
         Button C = new Button("Currency");
         Button D = new Button("Weather");
+        */
+
 
         EventHandler<ActionEvent> handler = new EventHandler<ActionEvent>(){
             @Override
@@ -52,9 +52,9 @@ public class Main extends Application {
 
             }
         };
-        var firstScene = new Scene(box, 700,700) ;
-        A.setOnAction(handler);
-        A.setFont(font);
+        var firstScene = new Scene(root, 700,700) ;
+        //A.setOnAction(handler);
+        //A.setFont(font);
         primaryStage.setScene(firstScene);
         primaryStage.show();
 
