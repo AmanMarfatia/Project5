@@ -26,6 +26,11 @@
             <Font name="Times New Roman" size="20.0" />
          </font>
       </Button>
+      <Label layoutX="135.0" layoutY="20.0" text="Choose one of the following:" textFill="RED">
+         <font>
+            <Font name="Times New Roman" size="29.0" />
+         </font>
+      </Label>
 
     </children>
 </AnchorPane>
