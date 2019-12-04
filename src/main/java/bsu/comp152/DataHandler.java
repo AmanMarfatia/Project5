@@ -1,6 +1,8 @@
 package bsu.comp152;
 
 import com.google.gson.Gson;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
 import java.io.IOException;
 import java.net.URI;
@@ -10,6 +12,16 @@ import java.net.http.HttpResponse;
 import java.util.ArrayList;
 
 public class DataHandler {
+
+    @FXML
+    private Button Jokes;
+    @FXML
+    private Button Currency;
+    @FXML
+    private Button Weather;
+    @FXML
+    private Button StarWar;
+
     private HttpClient dataGrabber;
     private String webLocation;
 
