@@ -4,20 +4,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.JokeWindow">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.JokesController">
    <children>
       <VBox prefHeight="400.0" prefWidth="600.0">
          <children>
-            <MenuButton mnemonicParsing="false" text="Type">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Programming" />
-                <MenuItem mnemonicParsing="false" text="Something" />
-              </items>
+            <Label text="Type of Jokes:">
                <font>
                   <Font name="Times New Roman" size="18.0" />
                </font>
-            </MenuButton>
+            </Label>
          </children>
       </VBox>
    </children>

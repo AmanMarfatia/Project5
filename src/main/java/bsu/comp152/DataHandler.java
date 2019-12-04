@@ -13,15 +13,6 @@ import java.util.ArrayList;
 
 public class DataHandler {
 
-    @FXML
-    private Button Jokes;
-    @FXML
-    private Button Currency;
-    @FXML
-    private Button Weather;
-    @FXML
-    private Button StarWar;
-
     private HttpClient dataGrabber;
     private String webLocation;
 
