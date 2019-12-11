@@ -52,7 +52,7 @@ public class DataHandler {
             return "Jokes: "+ title;
         }
     }
-    public ArrayList<JokeDataType> getData(){
+    public ArrayList<responseDataType> getData1(){
         var requestBuilder = HttpRequest.newBuilder();
         var dataRequest = requestBuilder.uri(URI.create(webLocation)).build();
         HttpResponse<String> response = null;
@@ -70,17 +70,30 @@ public class DataHandler {
         }
         var usefulData = response.body();
         var jsonInterpreter = new Gson();
-        var weather = jsonInterpreter.fromJson(usefulData, responseDataType.class);
+        var weather = jsonInterpreter.fromJson(usefulData, responseDataType1.class);
         return weather.results;
     }
 
-    class weatherType{
+    class responseDataType1{
         String currentDay;
         String threeDay;
         String fiveDay;
         String tenDay;
-        ArrayList<weatherType>results;
+        ArrayList<responseDataType>results;
 
 
+        class WeatherType {
+            String currentDay;
+            String threeDay;
+            String fiveDay;
+            String tenDay;
+
+            @Override
+            public String toString() {
+                return "Weather: " + currentDay;
+
+            }
+
+        }
     }
 }

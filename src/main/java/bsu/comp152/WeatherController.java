@@ -37,7 +37,7 @@ public class WeatherController implements Initializable {
             displayData(data);
         }
 
-        public void displayData (weatherType data){
+        public void displayData (WeatherType data){
             CurrentField.setText(data.currentDay);  // current day
             ThreeDayField.setText(data.culture); // 3 day
             FiveDayField.setText(data.born); // 5 day
