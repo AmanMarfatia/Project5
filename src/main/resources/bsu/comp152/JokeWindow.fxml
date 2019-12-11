@@ -13,6 +13,8 @@
                   <Font name="Times New Roman" size="18.0" />
                </font>
             </Label>
+            <CheckBox mnemonicParsing="false" text="Prgramming" />
+            <CheckBox mnemonicParsing="false" text="Other" />
          </children>
       </VBox>
    </children>
