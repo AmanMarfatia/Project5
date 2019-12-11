@@ -11,11 +11,7 @@ import java.util.ResourceBundle;
 
 public class WeatherController implements Initializable {
     @FXML
-    public TextField NameField;
-    public TextField CultureField;
-    public TextField BornField;
-    public TextField TitleField;
-    public TextField inputName;
+    
     private Model dataModel;
 
     @Override
