@@ -29,7 +29,7 @@ public class JokesController implements Initializable {
     }
 
     public String getQueryParameters() {
-        //var joke = getJokesType();
+        var joke = getJokesType();
         // Get the category of jokes that the user wants (call a method that does this) (category)
         // Get the topics the user doesn't want to joke about (call a method that does this) (back list)
         //
@@ -39,7 +39,15 @@ public class JokesController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         loadData();
-       // ListControl.getSelectionModel().selectedItemProperty;
+        // ListControl.getSelectionModel().selectedItemProperty;
+
+    }
+
+    ;
+
+    private String getJokesType() {
+
+
 
     }
 }

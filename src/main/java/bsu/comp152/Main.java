@@ -30,6 +30,7 @@ public class Main extends Application {
         var loc = getClass().getResource("Main.fxml");
         try {
             root = FXMLLoader.load(loc);
+            //loc.
         } catch (IOException e) {
             System.out.println("Couldn't Find FXML file!!!!!!");
         }
