@@ -14,6 +14,7 @@ import javafx.scene.paint.Paint;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import javax.imageio.IIOException;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -21,7 +22,6 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-
 
 
     @Override
@@ -39,23 +39,37 @@ public class Main extends Application {
         primaryStage.setTitle("Project 5");
         primaryStage.show();
     }
+
     @FXML
-    public void exit(ActionEvent event){
+    public void exit(ActionEvent event) {
         System.exit(0);//alls well - bye bye
     }
-        @FXML
-        public  void openJokeWindow(ActionEvent event){
-            Parent root = null;
-            var loc = getClass().getResource("JokeWindow.fxml");
-            try {
-                root = FXMLLoader.load(loc);
-            }catch (IOException e){
-                System.out.println("Couldn't Find FXML file!!!!!!");
-            }
-            Scene windowContents = new Scene(root, 900,400);
-            Stage jokeWindow = new Stage();
-            jokeWindow.setScene(windowContents);
-            jokeWindow.setTitle("Joke");
-            jokeWindow.show();
+
+    @FXML
+    public void openJokeWindow(ActionEvent event) {
+        Parent root = null;
+        var loc = getClass().getResource("JokeWindow.fxml");
+        try {
+            root = FXMLLoader.load(loc);
+        } catch (IOException e) {
+            System.out.println("Couldn't Find FXML file!!!!!!");
+        }
+        Scene windowContents = new Scene(root, 900, 400);
+        Stage jokeWindow = new Stage();
+        jokeWindow.setScene(windowContents);
+        jokeWindow.setTitle("Joke");
+        jokeWindow.show();
+    }
+
+    // Weather Window
+    @FXML
+    public void openWeatherWindow(ActionEvent event) {
+        Parent root = null;
+        var loc = getClass().getResource("WeatherWindow.fxml");
+        try {
+            root = FXMLLoader.load(loc);
+
+        } catch (IOException e) {
         }
     }
+}
