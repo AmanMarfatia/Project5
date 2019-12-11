@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="bsu.comp152.WeatherWindow"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.WeatherWindow">
+   <children>
+      <VBox layoutX="-7.0" layoutY="37.0" prefHeight="289.0" prefWidth="414.0" />
+      <CheckBox layoutX="421.0" layoutY="67.0" mnemonicParsing="false" text="3 Day" />
+      <CheckBox layoutX="421.0" layoutY="97.0" mnemonicParsing="false" text="5 Day" />
+      <CheckBox layoutX="421.0" layoutY="128.0" mnemonicParsing="false" text="10 Day" />
+   </children>
 </AnchorPane>
