@@ -33,11 +33,11 @@ public class WeatherController implements Initializable {
             return;
         }
         site = site+ "city/"+input;
-        weatherData data = dataModel.GetData(site);
+        DataHandler data = dataModel.GetData(site);
         displayData(data);
     }
 
-    public void displayData(weatherData data){
+    public void displayData(DataHandler data){
         NameField.setText(data.name);
         CultureField.setText(data.culture);
         BornField.setText(data.born);
