@@ -11,7 +11,7 @@ import java.util.ResourceBundle;
 
 public class WeatherController implements Initializable {
     @FXML
-    
+
     private Model dataModel;
 
     @Override
