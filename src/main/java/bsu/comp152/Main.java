@@ -61,6 +61,23 @@ public class Main extends Application {
         jokeWindow.show();
     }
 
+    // Currency Window
+    @FXML
+    public  void openCurrencyWindow(ActionEvent event){
+        Parent root = null;
+        var loc = getClass().getResource("CurrencyWindow.fxml");
+        try {
+            root = FXMLLoader.load(loc);
+        }catch (IOException e){
+            System.out.println("Couldn't Find FXML file");
+        }
+        Scene windowContents = new Scene(root, 900,400);
+        Stage recipeWindow = new Stage();
+        recipeWindow.setScene(windowContents);
+        recipeWindow.setTitle("Currency Exchange");
+        recipeWindow.show();
+    }
+
     // Weather Window
     @FXML
     public void openWeatherWindow(ActionEvent event) {

@@ -19,6 +19,7 @@ public class DataHandler {
         dataGrabber = HttpClient.newHttpClient();
         this.webLocation = webLocation;
     }
+
     public ArrayList<JokeDataType> getData() {
         var requestBuilder = HttpRequest.newBuilder();
         var dataRequest = requestBuilder.uri(URI.create(webLocation)).build();
@@ -63,6 +64,8 @@ public class DataHandler {
         }
         catch (InterruptedException e){
             System.out.println("Connection to site broken");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         if (response == null ){
             System.out.println("Something went terribly wrong, ending program");
@@ -95,5 +98,46 @@ public class DataHandler {
             }
 
         }
+    }
+
+    // Code for currency window
+    public Array<currencyDataType> currencyGetData(){
+        var requestBuilder = HttpRequest.newBuilder();
+        var dataRequest = requestBuilder.uri(URI.create(webLocation)).build();
+        HttpResponse<String> response = null;
+        try {
+            response = dataGrabber.send(dataRequest, HttpResponse.BodyHandlers.ofString());
+        }catch(IOException e){
+            System.out.println("Error connecting to network or site");
+        }
+        catch (InterruptedException e){
+            System.out.println("Connection to site broken");
+        }
+        if (response == null ){
+            System.out.println("Something went wrong, ending program");
+            System.exit(-1);
+        }
+        var usefulData = response.body();
+        var jsonInterpreter = new Gson();
+        var currencyData = jsonInterpreter.fromJson(usefulData, responseDataType.class);
+        return currencyData.results;
+
+    }
+
+    class currencyResponseDataType{
+        String rates;
+        float version;
+        ArrayList<currencyDataType> results;
+    }
+
+    class currencyDataType {
+        String rates;
+
+
+        @Override
+        public String toString() {
+            return rates;
+        }
+
     }
 }
