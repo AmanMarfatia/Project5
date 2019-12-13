@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.CurrencyController">
+<children>
+        <MenuButton layoutX="99.0" layoutY="49.0" mnemonicParsing="false" text="Choose a currency:">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="USD" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="AUD" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="CAD" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="CHF" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="CNY" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="EUR" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="GBP" />
+                <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="HKD" />
+            </items>
+        </MenuButton>
+        <Button layoutX="90.0" layoutY="101.0" mnemonicParsing="false" onAction="#loadData" prefHeight="68.0" prefWidth="150.0" text="Choose amount" />
+      <DialogPane layoutX="320.0" layoutY="22.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="414.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="86.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="151.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="217.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="285.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="349.0" style="-fx-background-color: pink;" />
+      <DialogPane layoutX="320.0" layoutY="479.0" style="-fx-background-color: pink;" />
+</children>
+</AnchorPane>
