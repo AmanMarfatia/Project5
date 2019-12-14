@@ -2,20 +2,9 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.JokesController">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <Label text="Type of Jokes:">
-               <font>
-                  <Font name="Times New Roman" size="18.0" />
-               </font>
-            </Label>
-            <CheckBox mnemonicParsing="false" text="Prgramming" />
-            <CheckBox mnemonicParsing="false" text="Other" />
-         </children>
-      </VBox>
    </children>
 </AnchorPane>

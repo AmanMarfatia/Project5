@@ -45,6 +45,7 @@ public class Main extends Application {
         System.exit(0);//alls well - bye bye
     }
 
+    // Jokes Window
     @FXML
     public void openJokeWindow(ActionEvent event) {
         Parent root = null;
