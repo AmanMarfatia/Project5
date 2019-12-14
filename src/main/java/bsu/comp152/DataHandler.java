@@ -46,11 +46,11 @@ public class DataHandler {
         ArrayList<JokeDataType>results;
     }
     class JokeDataType{
-        String title;
-        String type;
+        String Category;
+        String Backlist;
         @Override
         public String toString(){
-            return "Jokes: "+ title;
+            return Category;
         }
     }
     public ArrayList<responseDataType> getData1(){
