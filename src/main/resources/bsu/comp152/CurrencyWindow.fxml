@@ -5,7 +5,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bsu.comp152.CurrencyController">
 <children>
-        <MenuButton layoutX="99.0" layoutY="49.0" mnemonicParsing="false" text="Choose a currency:">
+        <MenuButton layoutX="90.0" layoutY="51.0" mnemonicParsing="false" text="Choose a currency:">
             <items>
                 <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="USD" />
                 <MenuItem mnemonicParsing="false" onAction="#selectMenuItem" text="AUD" />

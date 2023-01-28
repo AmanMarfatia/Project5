@@ -8,7 +8,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
-
 import javax.swing.event.ChangeListener;
 import javax.swing.text.html.ListView;
 import java.awt.*;

@@ -51,6 +51,7 @@ public class DataHandler {
         @Override
         public String toString(){
             return Category;
+
         }
     }
     public ArrayList<responseDataType> getData1(){
